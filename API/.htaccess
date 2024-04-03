@@ -26,3 +26,9 @@ RewriteRule ^macchinario/(\d+)/?$ macchinario.php?id=$1 [L]
 
 # Redirect machinery.php
 RewriteRule ^macchinario/?$ macchinario.php [L]
+
+# Redirect machinery.php with ID
+RewriteRule ^azienda/(\d+)/?$ azienda.php?id=$1 [L]
+
+# Redirect machinery.php
+RewriteRule ^azienda/?$ azienda.php [L]
