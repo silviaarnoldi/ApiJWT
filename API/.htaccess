@@ -1,0 +1,28 @@
+# Enable Rewrite Engine and set the base directory
+RewriteEngine On
+RewriteBase /api/API/
+
+
+# Redirect user.php with ID
+RewriteRule ^utente/(\d+)/?$ utente.php?id=$1 [L]
+
+# Redirect user.php
+RewriteRule ^utente/?$ utente.php [L]
+
+# Redirect document.php with ID
+RewriteRule ^documento/(\d+)/?$ documento.php?id=$1 [L]
+
+# Redirect document.php
+RewriteRule ^documento/?$ documento.php [L]
+
+# Redirect fault.php with ID
+RewriteRule ^guasto/(\d+)/?$ guasto.php?id=$1 [L]
+
+# Redirect fault.php
+RewriteRule ^guasto/?$ guasto.php [L]
+
+# Redirect machinery.php with ID
+RewriteRule ^macchinario/(\d+)/?$ macchinario.php?id=$1 [L]
+
+# Redirect machinery.php
+RewriteRule ^macchinario/?$ macchinario.php [L]
